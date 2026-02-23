@@ -17,8 +17,6 @@ This skill runs as a **sessionEnd hook** at the end of each session:
 
 ## Configuration
 
-Edit `config.json` to customize:
-
 ```json
 {
   "min_session_length": 10,
@@ -60,7 +58,7 @@ Add to your `.github/hooks/default.json`:
   "hooks": {
     "sessionEnd": [{
       "type": "command",
-      "bash": ".github/skills/continuous-learning/evaluate-session.sh"
+      "bash": "scripts/hooks/evaluate-session.sh"
     }]
   }
 }
@@ -72,30 +70,14 @@ Add to your `.github/hooks/default.json`:
 - **Non-blocking**: Doesn't add latency to every message
 - **Complete context**: Has access to full session transcript
 
-## Related
+## Comparison with v2
 
-- [The Longform Guide](https://x.com/affaanmustafa/status/2014040193557471352) - Section on continuous learning
-- `continuous-learning-v2` skill - Instinct-based evolution of this skill
-
----
-
-## Comparison Notes
-
-### vs Instinct-Based Architecture (v2)
-
-| Feature | v1 (This Skill) | v2 |
+| Feature | v1 (This Skill) | v2 (Instinct-Based) |
 |---------|------------------|----|
-| Observation | sessionEnd hook (end of session) | preToolUse/postToolUse (100% reliable) |
+| Observation | sessionEnd hook (end of session) | preToolUse/postToolUse (continuous) |
 | Analysis | Main context | Background analysis |
 | Granularity | Full skills | Atomic "instincts" |
-| Confidence | None | 0.3-0.9 weighted |
-| Evolution | Direct to skill | Instincts to cluster to skill/command/agent |
-| Sharing | None | Export/import instincts |
+| Confidence | None | 0.3–0.9 weighted |
+| Evolution | Direct to skill | Instincts cluster into skills/commands/agents |
 
-### Potential v2 Enhancements
-
-1. **Instinct-based learning** - Smaller, atomic behaviors with confidence scoring
-2. **Background observer** - Analyzing patterns in parallel
-3. **Confidence decay** - Instincts lose confidence if contradicted
-4. **Domain tagging** - code-style, testing, git, debugging, etc.
-5. **Evolution path** - Cluster related instincts into skills/commands
+See `continuous-learning-v2` for the instinct-based approach.
