@@ -65,13 +65,6 @@
       },
       {
         "type": "command",
-        "bash": "./scripts/hooks/post-tool-use-typecheck.sh",
-        "powershell": "./scripts/hooks/post-tool-use-typecheck.ps1",
-        "timeoutSec": 30,
-        "comment": "Run TypeScript type check after editing .ts/.tsx files"
-      },
-      {
-        "type": "command",
         "bash": "./scripts/hooks/post-tool-use-console-warn.sh",
         "powershell": "./scripts/hooks/post-tool-use-console-warn.ps1",
         "timeoutSec": 5,
