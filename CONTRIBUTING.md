@@ -132,7 +132,6 @@ Examples:
 
 - **Add files individually** — never use `git add .` or `git add -A`
 - No hardcoded secrets or API keys in any file
-- No Claude-specific references (`Claude Code`, `~/.claude/`, `CLAUDE.md`)
 
 ---
 
