@@ -1,0 +1,8 @@
+{
+  "_comment": "Add this entry to the postToolUse array in .github/hooks/default.json",
+  "type": "command",
+  "bash": "./scripts/hooks/post-tool-use-dotnet-build.sh",
+  "powershell": "./scripts/hooks/post-tool-use-dotnet-build.ps1",
+  "timeoutSec": 30,
+  "comment": "Verify .NET build after editing C# files"
+}
