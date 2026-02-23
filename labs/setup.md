@@ -28,7 +28,7 @@ Before starting the labs, ensure you have:
 
 🌐 **On GitHub:**
 
-1. Fork this repository: [everything-copilot](https://github.com/YOUR-ORG/everything-copilot)
+1. Fork this repository: [day-in-the-life-copilot-lab](https://github.com/YOUR-ORG/day-in-the-life-copilot-lab)
 2. Go to your fork's **Settings** → **Actions** → **General** and ensure Actions are enabled
 3. Go to **Actions** tab and click _"I understand my workflows, go ahead and enable them"_ if prompted
 
@@ -36,8 +36,8 @@ Before starting the labs, ensure you have:
 
 4. Clone your fork:
 ```bash
-git clone https://github.com/YOUR-USERNAME/everything-copilot.git
-cd everything-copilot
+git clone https://github.com/YOUR-USERNAME/day-in-the-life-copilot-lab.git
+cd day-in-the-life-copilot-lab
 ```
 
 5. Verify the .NET project builds:

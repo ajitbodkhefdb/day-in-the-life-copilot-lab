@@ -34,7 +34,7 @@ Learn to build, configure, and orchestrate AI agents using GitHub Copilot's comp
 
 ---
 
-## Lab Modules
+## Lab Modules #TODO check timing or remove it
 
 | # | Module | Duration | Focus |
 |---|--------|----------|-------|
@@ -57,7 +57,7 @@ Learn to build, configure, and orchestrate AI agents using GitHub Copilot's comp
 ## Repository Structure
 
 ```
-everything-copilot/
+day-in-the-life-copilot-lab/
 ├── .github/
 │   ├── agents/                    # 30 custom agent profiles (.agent.md)
 │   ├── skills/                    # 29 agent skills (SKILL.md)
@@ -125,8 +125,8 @@ Pre-configured: Context7 (library docs), Memory (knowledge graph), Sequential Th
 # 1. Fork this repository on GitHub
 
 # 2. Clone your fork
-git clone https://github.com/YOUR-USERNAME/everything-copilot.git
-cd everything-copilot
+git clone https://github.com/YOUR-USERNAME/day-in-the-life-copilot-lab.git
+cd day-in-the-life-copilot-lab
 
 # 3. Verify .NET project builds
 dotnet build ContosoUniversity.sln

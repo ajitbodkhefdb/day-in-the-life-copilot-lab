@@ -39,7 +39,7 @@ You can configure Copilot to automatically review every pull request using **rep
 1. Go to your repository → **Settings** → **Rules** → **Rulesets**
 2. Click **New ruleset** → **New branch ruleset**
 3. Name it: `copilot-code-review`
-4. Under **Target branches**, add `lab/everything-copilot` (or your default branch)
+4. Under **Target branches**, add `lab/day-in-the-life-copilot-lab` (or your default branch)
 5. Under **Branch rules**, check **Require a pull request before merging**
 6. Check **Request pull request review from Copilot**
 7. Optionally enable:
@@ -89,12 +89,12 @@ git push origin feature/add-course-prerequisites
 
 ```bash
 gh pr create \
-  --base lab/everything-copilot \
+  --base lab/day-in-the-life-copilot-lab \
   --title "feat: add course prerequisites and enrollment cap" \
   --body "Adds MaxEnrollment property to Course model. Part of the course prerequisites feature."
 ```
 
-Or use the GitHub web UI: **Compare & pull request** → set base to `lab/everything-copilot` → **Create pull request**.
+Or use the GitHub web UI: **Compare & pull request** → set base to `lab/day-in-the-life-copilot-lab` → **Create pull request**.
 
 ## 9.4 Review the Automated Feedback
 

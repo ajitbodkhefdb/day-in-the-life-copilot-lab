@@ -139,12 +139,12 @@ Let's trigger the workflow by creating a feature branch.
 1. Navigate to your forked repository on GitHub
 2. Click the branch dropdown on the repo's main code page
 3. Type `feature/add-course-prerequisites` in the branch name field
-4. Click **Create branch: feature/add-course-prerequisites from lab/everything-copilot**
+4. Click **Create branch: feature/add-course-prerequisites from lab/day-in-the-life-copilot-lab**
 
 Alternatively, 🖥️ **from your terminal:**
 
 ```bash
-git push origin lab/everything-copilot:feature/add-course-prerequisites
+git push origin lab/day-in-the-life-copilot-lab:feature/add-course-prerequisites
 ```
 
 5. Go to the **Actions** tab in your repository

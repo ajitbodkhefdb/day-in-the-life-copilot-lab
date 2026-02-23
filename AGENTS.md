@@ -14,7 +14,7 @@ This is the **Everything GitHub Copilot Hands-On Lab** — a comprehensive train
 ## Repository Structure
 
 ```
-everything-copilot/
+day-in-the-life-copilot-lab/
 ├── .github/
 │   ├── agents/                    # 30 custom agent profiles (.agent.md)
 │   ├── skills/                    # 29 agent skills (SKILL.md)
