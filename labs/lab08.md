@@ -119,13 +119,7 @@ try { gh aw --help 2>$null; if ($?) { "gh-aw is installed" } else { "gh-aw not a
 
 2. If `gh aw` is installed, compile the workflow:
 
-**WSL/Bash:**
-```bash
-gh aw compile .github/workflows/generate-prd.md
-```
-
-**PowerShell:**
-```powershell
+```shell
 gh aw compile .github/workflows/generate-prd.md
 ```
 

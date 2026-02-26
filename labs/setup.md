@@ -50,13 +50,7 @@ Set-Location day-in-the-life-copilot-lab
 
 5. Verify the .NET project builds:
 
-**WSL/Bash:**
-```bash
-dotnet build ContosoUniversity.sln
-```
-
-**PowerShell:**
-```powershell
+```shell
 dotnet build ContosoUniversity.sln
 ```
 
@@ -73,37 +67,19 @@ Build succeeded.
 
 1. Verify GitHub CLI is authenticated:
 
-**WSL/Bash:**
-```bash
-gh auth status
-```
-
-**PowerShell:**
-```powershell
+```shell
 gh auth status
 ```
 
 2. Verify Copilot CLI is installed:
 
-**WSL/Bash:**
-```bash
-gh copilot --version
-```
-
-**PowerShell:**
-```powershell
+```shell
 gh copilot --version
 ```
 
 3. Verify Agentic Workflows CLI is installed:
 
-**WSL/Bash:**
-```bash
-gh aw --version
-```
-
-**PowerShell:**
-```powershell
+```shell
 gh aw --version
 ```
 
@@ -113,13 +89,7 @@ gh aw --version
 
 1. Open the repository in VS Code:
 
-**WSL/Bash:**
-```bash
-code .
-```
-
-**PowerShell:**
-```powershell
+```shell
 code .
 ```
 

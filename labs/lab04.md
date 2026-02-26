@@ -147,7 +147,9 @@ public class StudentIntegrationTests : IClassFixture<CustomWebApplicationFactory
 SKILL
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 ---
@@ -244,6 +246,8 @@ public class StudentIntegrationTests : IClassFixture<CustomWebApplicationFactory
 '@ | Out-File -FilePath .github/skills/dotnet-testing/SKILL.md -Encoding utf8
 ```
 
+</details>
+
 3. Verify the skill frontmatter:
 
 **WSL/Bash:**
@@ -317,7 +321,9 @@ Use `MethodName_Condition_ExpectedResult`:
 PROMPT
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 ---
@@ -357,6 +363,8 @@ Use `MethodName_Condition_ExpectedResult`:
 3. Report results
 '@ | Out-File -FilePath .github/prompts/create-dotnet-test.prompt.md -Encoding utf8
 ```
+
+</details>
 
 3. Verify:
 

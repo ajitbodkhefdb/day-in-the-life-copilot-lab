@@ -155,7 +155,9 @@ HOOK
 chmod +x scripts/hooks/post-tool-use-dotnet-build.sh
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 #!/usr/bin/env bash
@@ -191,6 +193,8 @@ echo "✅ Build succeeded after editing $FILE_PATH"
 '@ | Out-File -FilePath scripts/hooks/post-tool-use-dotnet-build.sh -Encoding utf8
 ```
 
+</details>
+
 > ⚠️ **Don't skip this step** — without execute permissions, the hook won't run and you'll see no output.
 
 2. Create the PowerShell equivalent:
@@ -220,7 +224,9 @@ Write-Host "✅ Build succeeded after editing $filePath"
 HOOK
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 # Post-tool-use hook: Verify .NET build after editing C# files
@@ -244,6 +250,8 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "✅ Build succeeded after editing $filePath"
 '@ | Out-File -FilePath scripts/hooks/post-tool-use-dotnet-build.ps1 -Encoding utf8
 ```
+
+</details>
 
 3. Register the hook in `default.json`. Open the file:
 ```bash

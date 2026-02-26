@@ -66,7 +66,9 @@ applyTo: '**/*.cshtml'
 EOF
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 ---
@@ -82,6 +84,8 @@ applyTo: '**/*.cshtml'
 - Use Bootstrap 5 CSS classes for layout and styling.
 '@ | Out-File -FilePath .github/instructions/razor-views.instructions.md -Encoding utf8
 ```
+
+</details>
 
 2. Verify the `applyTo` glob:
 

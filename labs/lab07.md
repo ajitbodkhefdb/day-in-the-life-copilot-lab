@@ -152,7 +152,9 @@ Summarize what was done across all phases.
 AGENT
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 ---
@@ -230,6 +232,8 @@ Summarize what was done across all phases.
 - **Pass context forward** — each agent needs to know what the previous one did
 '@ | Out-File -FilePath .github/agents/lab-orchestrator.agent.md -Encoding utf8
 ```
+
+</details>
 
 2. Verify the agent:
 

@@ -116,7 +116,9 @@ dotnet run --project ContosoUniversity.Web     # Run the app
 AGENT
 ```
 
-**PowerShell:**
+<details>
+<summary><strong>PowerShell alternative</strong></summary>
+
 ```powershell
 @'
 ---
@@ -173,6 +175,8 @@ dotnet run --project ContosoUniversity.Web     # Run the app
 - [ ] No hardcoded secrets
 '@ | Out-File -FilePath .github/agents/dotnet-dev.agent.md -Encoding utf8
 ```
+
+</details>
 
 2. Verify the agent was created:
 
