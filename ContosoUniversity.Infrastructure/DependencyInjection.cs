@@ -13,11 +13,23 @@ namespace ContosoUniversity.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            // Add Database
-            services.AddDbContext<SchoolContext>(options =>
-                options.UseSqlServer(
-                    configuration.GetConnectionString("DefaultConnection"),
-                    b => b.MigrationsAssembly(typeof(SchoolContext).Assembly.FullName)));
+            // Add Database — use SQLite when connection string indicates it, otherwise SQL Server
+            var connectionString = configuration.GetConnectionString("DefaultConnection") 
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+            if (connectionString.Contains("Data Source=", StringComparison.OrdinalIgnoreCase) 
+                && !connectionString.Contains("Server=", StringComparison.OrdinalIgnoreCase))
+            {
+                services.AddDbContext<SchoolContext>(options =>
+                    options.UseSqlite(connectionString));
+            }
+            else
+            {
+                services.AddDbContext<SchoolContext>(options =>
+                    options.UseSqlServer(
+                        connectionString,
+                        b => b.MigrationsAssembly(typeof(SchoolContext).Assembly.FullName)));
+            }
 
             // Add Repositories
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
